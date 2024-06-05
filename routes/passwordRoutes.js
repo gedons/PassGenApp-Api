@@ -1,5 +1,5 @@
 const express = require('express');
-const { generatePassword, savePassword, getPasswords, getPasswordById, updatePassword, deletePassword, sharePassword, GetsharePassword  } = require('../controllers/passwordController');
+const { generatePassword, savePassword, getPasswords, getPasswordById, updatePassword, deletePassword, sharePassword,GetsharePassword  } = require('../controllers/passwordController');
 const { protect } = require('../middleware/authMiddleware');
 const rateLimiter = require('../middleware/rateLimiter');
 
