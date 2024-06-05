@@ -8,8 +8,8 @@ const rateLimiter = require('./middleware/rateLimiter');
 dotenv.config();
 
 const corsOptions = {
-    //origin: 'https://cartrk.vercel.app', 
-    origin: 'http://localhost:5173', 
+    origin: 'https://easypassword-gen.vercel.app', 
+    //origin: 'http://localhost:5173', 
     credentials: true,
   };
   
