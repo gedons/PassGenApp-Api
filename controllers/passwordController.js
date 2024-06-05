@@ -85,7 +85,7 @@ exports.sharePassword = async (req, res) => {
     if (!password) {
       return res.status(404).json({ error: 'Password not found' });
     }
-    const shareableLink = `http://localhost:5173/share/${password._id}`;
+    const shareableLink = `https://easypassword-gen.vercel.app/share/${password._id}`;
     res.json({ shareableLink });
   } catch (err) {
     res.status(500).json({ error: 'Server error' });
