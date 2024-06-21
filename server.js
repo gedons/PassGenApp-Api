@@ -7,17 +7,17 @@ const rateLimiter = require('./middleware/rateLimiter');
 
 dotenv.config();
 
-const corsOptions = {
-    origin: 'https://easypassword-gen.vercel.app', 
-    //origin: 'http://localhost:5173', 
-    credentials: true,
-  };
+// const corsOptions = {
+//     origin: 'https://easypassword-gen.vercel.app', 
+//     //origin: 'http://localhost:5173', 
+//     credentials: true,
+//   };
   
 
 connectDB();
 
 const app = express();
-app.use(cors(corsOptions));
+app.use(cors());
 app.use(express.json());
 app.use(rateLimiter);
 
